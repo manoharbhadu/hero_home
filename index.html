@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hero home </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            padding: 10px;
+            width: 200px;
+            height: 70px;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+            list-style: none;
+            margin: 40px 10px;
+
+        }
+
+        .nav ul li a {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .banner {
+            background: url(https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/27_HHM-Boulevard_hi-res300-dpi_11-10-19-1-1-scaled.jpg) center;
+            height: 700px;
+            background-size: cover;
+        }
+
+        .bannerdiv {
+            width: 1100px;
+            margin: auto;
+        }
+
+        .bannerinfo {
+            width: 430px;
+            float: right;
+            margin-top: 187px;
+            background-color: #ffffff90;
+        }
+
+        .bannerinfo h3 {
+            background: red;
+            color: white;
+            padding: 16px 6px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 10px;
+            margin: 10px;
+        }
+
+        .bannerinfo ul {
+            border: 1px solid rgba(0, 0, 0, 0.418);
+            margin: 0 10px;
+        }
+
+        .bannerinfo li {
+            list-style: none;
+            padding: 15px 16px;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+        }
+
+        .bannerinfo li:nth-child(even) {
+            color: red;
+        }
+
+        .bannerinfo li:last-child {
+            border: none;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .bannerinfo input {
+            padding: 15px 0px;
+            width: 200px;
+            background: rgba(0, 0, 0, 0.845);
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .about {
+            padding: 70px;
+            text-align: center;
+        }
+
+        .about h1 {
+            color: red;
+        }
+
+        .aboutitem {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+
+        .aboutitem1 img {
+            height: 427px;
+            width: 510px;
+        }
+
+        .aboutitem2 {
+            width: 500px;
+            text-align: justify;
+            padding: 4px 40px;
+            line-height: 27px;
+            font-size: 18px;
+        }
+
+        .contaimer {
+            padding: 30px;
+            background: rgb(227 227 227);
+            margin-bottom: 40px;
+        }
+
+        .contaimer h1 {
+            color: red;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contaimerrow {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 260px;
+        }
+
+        .contaimerrow ul li {
+            list-style: none;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contaimerrow ul li i {
+            color: red;
+        }
+
+        .amenittes {
+            display: flex;
+            justify-content: center;
+            /* flex-wrap: wrap ; */
+            padding: 0 150px;
+        }
+
+        .amenittesitem {
+            width: 20%;
+            padding: 1.5%;
+            text-align: center;
+            margin: 1.5%;
+            background: white;
+        }
+
+        .amenittesitem p {
+            font-weight: bold;
+            padding-top: 10px;
+
+        }
+
+        .amenittesitem img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .gall {
+            width: 15rem;
+            height: 2.5rem;
+            font-weight: bold;
+            background: rgb(33, 60, 43);
+            color: white;
+            border: none;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .galbtn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .gall1 {
+            background: rgb(237 28 36);
+            width: 15rem;
+            height: 2.5rem;
+            font-weight: bold;
+            color: white;
+            border: none;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .gallcol {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 100px;
+
+
+        }
+
+        .gallcol img {
+            width: 260px;
+            border-radius: 15px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .masterplan {
+           text-align: center;
+        }
+        .masterrh1{
+            color: red;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">OVERVIEW</a></li>
+                    <li><a href="#">KEY FEATURES</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">AMENITIES</a></li>
+                    <li><a href="#">LOCATION MAP</a></li>
+                    <li><a href="#">FLOOR PLANS</a></li>
+                    <li><a href="#">FLOOR PLANS</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">PRICELIST</a></li>
+                    <li><a href="#">WALKTHROUGH</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerdiv">
+                <div class="bannerinfo">
+                    <h3>HERO HOMES MOHALI PH-2</h3>
+                    <ul>
+                        <li>RERA NO</li>
+                        <li>PBRERA-SAS81-PR0522</li>
+                        <li>Location</li>
+                        <li>Sector 88, Mohali</li>
+                        <li>Type</li>
+                        <li>3BHK + Store (Premium)</li>
+                    </ul>
+                    <div class="btn">
+                        <input type="button" value="Download Brochure">
+                        <input type="button" value="Walkthrough">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h1>HERO HOMES MOHALI</h1>
+            <div class="aboutitem">
+                <div class="aboutitem1">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/overview.jpg" alt="">
+                </div>
+                <div class="aboutitem2">
+                    <p>Hero Homes Mohali Phase-2 is a developing/developed project based on our 4 design pillars of the
+                        brand philosophy – Fitness | Sustainability | Community | Creativity</p> <br>
+                    <p>These four parameters help in adding distinctive features to the homes that lead to an enriched
+                        lifestyle for you. The company of loved ones set amidst beautiful surroundings bespoke a
+                        lifestyle of pure bliss. At Hero Homes Mohali, life is all about the fine things that make
+                        living worthwhile. Because a house is not enough, it needs to be changed into a comfortable
+                        haven with delightful amenities, open green spaces, play areas for children, a good
+                        neighbourhood and above all, a location that serves as an oasis of peace in the chaos of city
+                        life. All these and more await you at Hero Homes for a complete life of bliss.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contaimer">
+            <h1>KEY FEATURES</h1>
+            <div class="contaimerrow">
+                <ul>
+                    <li><i class="fas fa-check-double"></i> 18.5 Acres Residential Complex</li>
+                    <li><i class="fas fa-check-double"></i> Intelligent Traffic Flow</li>
+                    <li><i class="fas fa-check-double"></i> Climate Responsive Master Plan </li>
+                    <li><i class="fas fa-check-double"></i> 25000 sq. feet Clubhouse</li>
+                    <li><i class="fas fa-check-double"></i> Community Living</li>
+                </ul>
+                <ul>
+                    <li><i class="fas fa-check-double"></i> Vastu Compliance</li>
+                    <li><i class="fas fa-check-double"></i> ISO Certified</li>
+                    <li><i class="fas fa-check-double"></i> Theme Gardens</li>
+                    <li><i class="fas fa-check-double"></i> IGBC Pre Gold Certification</li>
+                    <li><i class="fas fa-check-double"></i> 5 Acres central green</li>
+                </ul>
+            </div>
+        </div>
+        <div class="masterplan">
+            <h1 class="masterrh1">MASTER PLAN</h1><br>
+            <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/site-planMohaliPhase2.jpg"
+                alt="">
+        </div>
+        <div class="contaimer">
+            <h1>AMENITIES</h1>
+            <div class="amenittes">
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/gym.png" alt="">
+                    <p>GYM</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/indoor.png" alt="">
+                    <p>Multi-indoor Games Facilities</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/open-roof-garden.png"
+                        alt="">
+                    <p>Open Roof Garden</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/playarea.png" alt="">
+                    <p>Multiple Kids Play Areas</p>
+                </div>
+            </div>
+            <div class="amenittes">
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/shopping.png" alt="">
+                    <p>Shopping Centre</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/skating.png" alt="">
+                    <p>Swimming Pool and Toddler’s Pool</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/snooker.png" alt="">
+                    <p>Amphitheatre</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/spa.png" alt="">
+                    <p>Table Tennis</p>
+                </div>
+            </div>
+            <div class="amenittes">
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/spa.png" alt="">
+                    <p>Yoga Centre</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/basketball.png"
+                        alt="">
+                    <p>Tennis Court & Basketball Court</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/board-games.png"
+                        alt="">
+                    <p>Board Games</p>
+                </div>
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/cricket-pitch.png"
+                        alt="">
+                    <p>Cricket Pitch </p>
+                </div>
+            </div>
+            <div class="amenittes">
+                <div class="amenittesitem">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/04/events.png" alt="">
+                    <p>Terrace Area for Events</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="contaimer">
+            <h1>GALLERY</h1>
+            <div class="galbtn">
+                <button class="gall1">GALLERY</button>
+                <button class="gall">Construction Photos</button>
+            </div>
+            <div class="gallcol">
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/12.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/11.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/10.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/9.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallcol">
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/8.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/7.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/6.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/5-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallcol">
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/4-1.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/3-1.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/1-1.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/elevational-night-view.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="gallcol">
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/16.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/15.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/13.jpg" alt="">
+                </div>
+                <div class="gallrow">
+                    <img src="https://herohomesmohali.realtynivesh.com/wp-content/uploads/2022/05/14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
